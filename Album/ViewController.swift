@@ -40,14 +40,19 @@ class ViewController: UIViewController {
         //팝업
         let alert = UIAlertController(title: "Hello", message: "도전!", preferredStyle: .alert)
         
-        let action = UIAlertAction(title: "Ok", style: .default, handler: nil)
+        let action = UIAlertAction(title: "Ok", style: .default, handler: { action in
+            self.testCallback()
+        })
         
         alert.addAction(action)
-        present(alert, animated: true, completion: { [weak self] in
-            self?.label1.text = "5000"
-        })
+        present(alert, animated: true, completion: nil)
         //팝업
     }
     
+    //팝업 OK가 불린뒤 실행될 함수
+    func testCallback() {
+        let random = arc4random_uniform(1000000)
+        label1.text = "가격은 \(random)"//String(random)
+    }
 }
 
