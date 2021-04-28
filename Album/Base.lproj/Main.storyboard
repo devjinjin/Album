@@ -16,25 +16,55 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kSq-4y-Dta">
-                                <rect key="frame" x="184" y="438" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T8e-Ey-GCl">
+                                <rect key="frame" x="147.5" y="716" width="119" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <state key="normal" title="refresh"/>
                                 <connections>
-                                    <action selector="TestButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gyI-1q-fLD"/>
+                                    <action selector="refresh:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QQC-Xv-zFA"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2vn-2O-S6S">
+                                <rect key="frame" x="20" y="217" width="374" height="352"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="352" id="dga-UQ-nuQ"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🌵100000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AAE-TM-Hba">
+                                <rect key="frame" x="114" y="617" width="186.5" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="우리집강아지" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DU2-ja-c61">
+                                <rect key="frame" x="134" y="115" width="146" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="kSq-4y-Dta" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="AbG-gd-wA7"/>
-                            <constraint firstItem="kSq-4y-Dta" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="vAa-hh-o0a"/>
+                            <constraint firstItem="T8e-Ey-GCl" firstAttribute="centerX" secondItem="2vn-2O-S6S" secondAttribute="centerX" id="4I0-Dj-o4H"/>
+                            <constraint firstItem="T8e-Ey-GCl" firstAttribute="top" secondItem="AAE-TM-Hba" secondAttribute="bottom" constant="51" id="7KB-z4-2qz"/>
+                            <constraint firstItem="2vn-2O-S6S" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="99c-FJ-N5V"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="T8e-Ey-GCl" secondAttribute="bottom" constant="86" id="CeU-8h-Nbd"/>
+                            <constraint firstItem="2vn-2O-S6S" firstAttribute="top" secondItem="DU2-ja-c61" secondAttribute="bottom" constant="68" id="KG0-2t-ihD"/>
+                            <constraint firstItem="DU2-ja-c61" firstAttribute="centerX" secondItem="2vn-2O-S6S" secondAttribute="centerX" id="eqa-hI-hzx"/>
+                            <constraint firstItem="T8e-Ey-GCl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nbG-ET-t47"/>
+                            <constraint firstItem="T8e-Ey-GCl" firstAttribute="centerX" secondItem="AAE-TM-Hba" secondAttribute="centerX" id="sF4-2S-2wT"/>
+                            <constraint firstItem="DU2-ja-c61" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="71" id="zzo-JS-SJG"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="imageView" destination="2vn-2O-S6S" id="Qmm-de-VCM"/>
+                        <outlet property="label1" destination="AAE-TM-Hba" id="pxl-aC-vGb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="139" y="115"/>
+            <point key="canvasLocation" x="137.68115942028987" y="114.50892857142857"/>
         </scene>
     </scenes>
     <resources>
