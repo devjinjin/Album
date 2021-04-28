@@ -19,6 +19,7 @@ class ViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         getLoadImage()
+        testCallback()
     }
     
     //이미지 가져오기
